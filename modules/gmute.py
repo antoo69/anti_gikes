@@ -9,7 +9,7 @@ from antigcast.helpers.tools import *
 from antigcast.helpers.database import *
 from OWNER_ID import OWNER_ID
 
-OWNER_ID ="6144669103"
+OWNER_ID ="7083782157"
 
 @Bot.on_message(filters.command("gdel") & filters.user(OWNER_ID))
 async def mute_handler(app : Bot, message : Message):

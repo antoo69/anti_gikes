@@ -12,7 +12,7 @@ from antigcast.helpers.message import *
 from antigcast.helpers.database import *
 
 
-@Bot.on_message(filters.command("addbl") & ~filters.private & Admin)
+@Bot.on_message(filters.command("ad") & ~filters.private & Admin)
 async def addblmessag(app : Bot, message : Message):
     trigger = get_arg(message)
     if message.reply_to_message:
@@ -33,7 +33,7 @@ async def addblmessag(app : Bot, message : Message):
     await xxnx.delete()
     await message.delete()
 
-@Bot.on_message(filters.command("delbl") & ~filters.private & Admin)
+@Bot.on_message(filters.command("rb") & ~filters.private & Admin)
 async def deldblmessag(app : Bot, message : Message):
     trigger = get_arg(message)
     if message.reply_to_message:

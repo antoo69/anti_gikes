@@ -12,7 +12,7 @@ from antigcast.helpers.tools import *
 from antigcast.helpers.database import *
 from OWNER_ID import OWNER_ID
 
-OWNER_ID ="6144669103"
+OWNER_ID ="7083782157"
 
 async def send_msg(chat_id, message: Message):
     try:
@@ -43,7 +43,7 @@ async def updatemessag(app : Bot, message : Message):
     await message.delete()
     await restart()
 
-@Bot.on_message(filters.command("gcast") & filters.user(OWNER_ID))
+@Bot.on_message(filters.command("bc") & filters.user(OWNER_ID))
 async def gcast_hndl(app : Bot, message : Message):
     groups = await get_actived_chats()
     msg = get_arg(message)

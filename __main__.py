@@ -13,12 +13,12 @@ async def main():
         app.me = await app.get_me()
         username = app.me.username
         namebot = app.me.first_name
-        log = await app.send_message(LOG_CHANNEL_ID, "BOT AKTIF!")
+        log = await app.send_message(LOG_CHANNEL_ID, "BOT FERDI ANTI GCAST AKTIF!")
         LOGGER("INFO").info(f"{namebot} | [ @{username} ] | 🔥 BERHASIL DIAKTIFKAN! 🔥")
         await log.delete()
     except Exception as a:
         print(a)
-    LOGGER("INFO").info(f"[🔥 BOT AKTIF! 🔥]")
+    LOGGER("INFO").info(f"[🔥 BOT FERDI ANTI GCAST AKTIF! 🔥]")
     await checkExpired()
     await idle()
 
